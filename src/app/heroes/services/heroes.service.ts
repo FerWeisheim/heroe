@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Heroe } from '../interfaces/heroes.interfaces';
 import { Observable } from 'rxjs';
 
-  const url = "https://my-json-server.typicode.com/FerWeisheim/heroe/heroes"
+  const url = "https://my-json-server.typicode.com/FerWeisheim/heroe/heroe"
 
 
 @Injectable({
