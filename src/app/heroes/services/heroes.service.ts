@@ -28,10 +28,10 @@ export class HeroesService {
       return this.http.post<Heroe>(`https://my-json-server.typicode.com/FerWeisheim/heroe/heroe`,heroe)
   }
   actualizandoHeroe(heroe: Heroe):Observable<Heroe>{
-    return this.http.put<Heroe>(`url/heroe/${heroe.id}`,heroe);
+    return this.http.put<Heroe>(`https://my-json-server.typicode.com/FerWeisheim/heroe/heroe/${heroe.id}`,heroe);
   }
   borrarHeroe(id : string):Observable<any>{
-    return this.http.delete<any>(`url/heroe/${id}`);
+    return this.http.delete<any>(`https://my-json-server.typicode.com/FerWeisheim/heroe/heroe/${id}`);
   }
   
 }
