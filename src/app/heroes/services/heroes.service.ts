@@ -14,7 +14,7 @@ export class HeroesService {
 
   constructor(private http: HttpClient) { }
   getHeroes(): Observable<Heroe[]>{//obserbabol de arreglo de heroes
-   return this.http.get<Heroe[]>("http://localhost:3000/heroes")
+   return this.http.get<Heroe[]>(url)
   }
 
   getHeroeId(id:string): Observable < Heroe >{
