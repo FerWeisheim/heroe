@@ -22,7 +22,7 @@ export class HeroesService {
   }
 
   getSugerencias(termino:string): Observable <Heroe[]>{
-    return this.http.get<Heroe[]>(`url/heroe?q=${termino}&_limit=6`)
+    return this.http.get<Heroe[]>(`https://my-json-server.typicode.com/FerWeisheim/heroe/heroe?q=${termino}&_limit=6`)
   }
   agregarHeroe(heroe:Heroe):Observable<Heroe>{
       return this.http.post<Heroe>(`https://my-json-server.typicode.com/FerWeisheim/heroe/heroe`,heroe)
