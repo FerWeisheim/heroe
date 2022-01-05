@@ -25,7 +25,7 @@ const routes : Routes=[
   {
     path:'**',
    // component:ErrorPageComponent
-   redirectTo:'heroe/listado'
+   redirectTo:'404'
   }
 ]
 
