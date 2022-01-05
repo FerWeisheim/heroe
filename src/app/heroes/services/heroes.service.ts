@@ -18,7 +18,7 @@ export class HeroesService {
   }
 
   getHeroeId(id:string): Observable < Heroe >{
-      return this.http.get<Heroe>(`url/${id}`)
+      return this.http.get<Heroe>(`https://my-json-server.typicode.com/FerWeisheim/heroe/heroe/${id}`)
   }
 
   getSugerencias(termino:string): Observable <Heroe[]>{
