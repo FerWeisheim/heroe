@@ -1,5 +1,5 @@
 
-    [{
+    [ heroes: {
       "id": "dc-superman",
       "superhero": "Superman",
       "publisher": "DC Comics",
