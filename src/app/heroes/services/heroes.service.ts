@@ -4,7 +4,7 @@ import { Heroe } from '../interfaces/heroes.interfaces';
 import { Observable } from 'rxjs';
 
   
-
+const url ="https://my-json-server.typicode.com/FerWeisheim/heroe/heroes";
 
 @Injectable({
   providedIn: 'root'
@@ -18,7 +18,7 @@ export class HeroesService {
   }
 
   getHeroeId(id:string): Observable < Heroe >{
-      return this.http.get<Heroe>(`https://my-json-server.typicode.com/FerWeisheim/heroe/heroes/${id}`)
+      return this.http.get<Heroe>(`url/${id}`)
   }
 
   getSugerencias(termino:string): Observable <Heroe[]>{
