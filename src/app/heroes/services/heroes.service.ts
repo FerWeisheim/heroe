@@ -14,7 +14,7 @@ export class HeroesService {
 
   constructor(private http: HttpClient) { }
   getHeroes(): Observable<Heroe[]>{//obserbabol de arreglo de heroes
-   return this.http.get<Heroe[]>("https://my-json-server.typicode.com/FerWeisheim/heroe/heroes")
+   return this.http.get<Heroe[]>("https://my-json-server.typicode.com/FerWeisheim/heroe/heroes/dc-green")
   }
 
   getHeroeId(id:string): Observable < Heroe >{
