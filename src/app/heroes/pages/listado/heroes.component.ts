@@ -3,8 +3,8 @@ import { HeroesService } from '../../services/heroes.service';
 import { Heroe } from '../../interfaces/heroes.interfaces';
 
 @Component({
-  selector: 'app-listado',
-  templateUrl: './listado.component.html',
+  selector: 'app-heroes',
+  templateUrl: './heroes.component.html',
     styles: [
   ]
 })
