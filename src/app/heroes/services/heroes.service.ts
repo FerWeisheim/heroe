@@ -4,7 +4,7 @@ import { Heroe } from '../interfaces/heroes.interfaces';
 import { Observable } from 'rxjs';
 
   const url = "https://my-json-server.typicode.com/FerWeisheim/heroe/heroes"
-// const url ="http://localhost:3000/heroes";
+
 
 @Injectable({
   providedIn: 'root'
