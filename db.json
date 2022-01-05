@@ -1,12 +1,5 @@
 {
-  "usuarios": [
-    {
-      "id": 1,
-      "usuario": "John Doe",
-      "email": "john.due@gmail.com"
-    }
-  ],
-  "heroe": [
+  "heroes": [
     {
       "id": "dc-superman",
       "superhero": "Superman",
