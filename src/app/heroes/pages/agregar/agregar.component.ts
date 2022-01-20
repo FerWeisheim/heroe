@@ -77,10 +77,10 @@ export class AgregarComponent implements OnInit {
     });
     dialog.afterClosed().subscribe(
       (result)=>{
-        if( result){
+        if(result){
           this.heroesService.borrarHeroe(this.heroe.id!)
           .subscribe(resp=>{
-            this.router.navigate(['/heroes'])
+            this.router.navigate(['/heroe/listado'])
           })
         }
       }

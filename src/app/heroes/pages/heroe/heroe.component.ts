@@ -26,7 +26,7 @@ heroe!: Heroe;
     .subscribe(heroe=> this.heroe=heroe);  
   }
   regresar(){
-    this.router.navigate(['/heroes/listado'])
+    this.router.navigate(['/heroe/listado'])
     }
 
 }
