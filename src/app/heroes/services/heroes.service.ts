@@ -3,8 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { Heroe } from '../interfaces/heroes.interfaces';
 import { Observable } from 'rxjs';
 
-  
-// const url ="https://my-json-server.typicode.com/FerWeisheim/heroe/heroes";
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +11,7 @@ import { Observable } from 'rxjs';
 export class HeroesService {
 
   constructor(private http: HttpClient) { }
-  getHeroes(): Observable<Heroe[]>{//obserbabol de arreglo de heroes
+  getHeroes(): Observable<Heroe[]>{
    return this.http.get<Heroe[]>("http://localhost:3000/heroes")
   }
 
